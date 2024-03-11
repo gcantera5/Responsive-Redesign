@@ -1,0 +1,542 @@
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column; 
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTACT INFORMATION SECTION */
+
+.contact {
+    width: 100%;
+    height: 30px;
+    background-color: #505C4D;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons1 {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.icons1 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+}
+
+/* NAVIGATION SECTION */
+
+.navigation {
+    width: 100%;
+    background-color: #F2F1F1;
+    margin-top: 0px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; 
+}
+
+.nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.logo img {
+    width: 250px; 
+    height: 150px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color:#697865;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button {
+    color: 444444; 
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block; 
+    border: none; 
+    background: none;
+    cursor: pointer; 
+}
+  
+.button:hover {
+    background-color: #697865; 
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+.profile img {
+    width: 50px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+/* SEARCH SECTION */
+
+.search {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    margin-top: 0px;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 800px; 
+}
+
+.search-button {
+    background-color: F2F1F1;
+    color: 444444;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    width: 100px;
+}
+
+/* MESSAGE SECTION */
+
+.message {
+    width: 100%;
+    color: white;
+    background-color: #697865;
+    margin-top: 0px; 
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 0; 
+    text-align: center; 
+    word-wrap: break-word; 
+}
+
+.message p {
+    margin: 5px 0;
+}
+/* SECOND NAVIGATION SECTION */
+
+.circle-buttons {
+    width: 100%;
+    height: 200px;
+    background-color: #F2F1F1;
+    margin-top: 20px;
+    overflow-y: auto;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 0 20px; 
+}
+
+.btnlables {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+}
+
+.btnlables a {
+    margin: 0 40px; 
+}
+
+.btncontainer {
+    text-align: center; 
+  }
+  
+.btncontainer img {
+    width: 80px; 
+    height: 80px; 
+}
+  
+.btn-container p {
+    margin-top: 5px; 
+    font-size: 14px;
+    color: 444444;
+}
+
+/* EVENTS SECTION */
+
+.events {
+    display: flex;
+    width: 100%;
+    height: 650px;
+    background-color: white;
+    margin-top: 0px; 
+    overflow-y: auto;
+    padding-left: 20px;
+}
+
+.events p {
+    color:#505C4D;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.events li {
+    margin-bottom: 20px; 
+}
+  
+.events ul ul {
+    margin-left: 20px; 
+}
+
+.upcoming-events{
+    width: 70%;
+    color:#505C4D;
+    font-size: 20px;
+}
+
+.calendar {
+    width: 50%;
+    height: 100%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+}
+
+.calendar p {
+    color:#505C4D;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+/* BEST SELLERS SECTION */
+
+.best-sellers {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    margin-top: 0px; 
+    overflow-y: auto;
+}
+
+.best-sellers-title {
+    color:#505C4D;
+    font-size: 40px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+.books-container img {
+    width: 50px; 
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.indiv-books {
+    text-align: center; 
+    margin: 0 50px; 
+  }
+  
+.indiv-books img {
+    width: 150px; 
+    height: 200px;
+    padding-bottom: 10px;
+}
+
+.indiv-books p {
+    font-size: 20px;
+    margin: 0;
+}
+
+ /* Styles iPad Pro 12.9" Screens --> TABLET */
+@media (max-width: 1024px) {
+
+    /* CONTACT SECTION */
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+    .contact p {
+        margin: 5px 0; 
+    }
+
+    /* NAVIGATION SECTION */
+
+    .navigation {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding-top: 10px;
+    }
+    
+    .nav-links {
+        display: none;
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px; 
+        margin-left: 400px;
+    }
+
+    .logo {
+        order: 2; 
+        margin-top: 20px; 
+        margin-left: 350px;
+    }
+
+    .btncontainer img {
+        width: 50px; 
+        height: 50px; 
+    }
+
+    .btnlables a {
+        margin: 0 40px; 
+    }
+
+    /* EVENTS SECTION */
+
+    .events {
+        flex-direction: column; 
+        align-items: center; 
+        height: auto;
+    }
+
+    .upcoming-events {
+        align-self: flex-start;
+        margin-left: 20px; 
+    }
+
+    .calendar {
+        align-items: center;
+        margin-top: 20px; 
+    }
+
+    /* BEST SELLERS SECTION */
+
+    .indiv-books {
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+
+    .indiv-books img {
+        width: 120px; 
+        height: auto;
+    }
+
+    .indiv-books p {
+        width: 250px; 
+        text-align: center; 
+        font-size: 16px; 
+        margin: 5px;
+    }
+}
+
+ /* Styles for iPhone 13/14 Screens --> MOBILE */
+@media (max-width: 390px) {
+
+    /* NAVIGATION SECTION */
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile {
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+
+    .logo {
+        order: 2;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: -30px;
+    }
+
+    /* SEARCH SECTION */
+
+    .search {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .search input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        height: 40px;
+        padding: 8px 8px;
+    }
+
+    /* MESSAGE SECTION */
+
+    .message {
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* SECOND NAVIGATION SECTION */
+
+    .circle-buttons {
+        width: 100%;
+        height: auto;
+        background-color: #F2F1F1;
+        margin-top: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .btnlables {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btnlables a {
+        margin: 35px;
+        font-size: 1px;
+    }
+
+    /* EVENTS SECTION */
+
+    .upcoming-events {
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+        margin-left: -50px;
+    }
+    
+    .upcoming-events ul {
+        padding-left: 70px; 
+    }
+    
+    .upcoming-events li {
+        margin-bottom: 10px; 
+    }
+
+    .calendar {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .calendar img {
+        width: 100%; 
+        height: auto; 
+        margin-right: 15px;
+    }
+
+    /* BEST SELLERS SECTION */
+
+    .best-sellers {
+        text-align: center; 
+    }
+
+    .best-sellers-title {
+        margin-left: auto; 
+        margin-right: auto; 
+        text-align: center; 
+    }
+
+    .books-container {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .indiv-books {
+        width: 100%; 
+    }
+
+    .indiv-books img {
+        width: 100px; 
+        height: auto; 
+        max-width: 100%; 
+    }
+}
+
+
